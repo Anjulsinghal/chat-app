@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions ={
-  origin: process.env.NODE_ENV === "development" ? 'https://chat-app-iota-orcin.vercel.app/' : 'http://localhost:5173', 
+  origin: process.env.NODE_ENV === "development" ? 'https://chat-app-iota-orcin.vercel.app' : 'http://localhost:5173', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
